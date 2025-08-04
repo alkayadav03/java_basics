@@ -5,9 +5,14 @@ public class countDigit{
         System.out.print("enter a number: " );
         int n=sc.nextInt();
         int count=0;
+        if(n==0){
+            count++;
+        }
+        else{
         while(n!=0){
             n=n/10;
             count++;
+        }
         }
          System.out.print(count );
     }
